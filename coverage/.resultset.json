@@ -1,0 +1,233 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/amit/amit_work/ror_assessment/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/helpers/comments_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/helpers/likes_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/controllers/likes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          5,
+          5,
+          3,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          4,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          7,
+          null,
+          null,
+          1,
+          9,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/models/like.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/models/post.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/models/comment.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/amit/amit_work/ror_assessment/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/amit/amit_work/ror_assessment/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/amit/amit_work/ror_assessment/app/controllers/comments_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/home/amit/amit_work/ror_assessment/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/amit/amit_work/ror_assessment/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1716901397
+  }
+}
