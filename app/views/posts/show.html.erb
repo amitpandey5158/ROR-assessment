@@ -1,0 +1,30 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+<p>By <%= @post.user.email %></p>
+
+<% if user_signed_in? %>
+  <% if @post.likes.find_by(user: current_user) %>
+    <%= link_to 'Unlike', likes_path(@post), method: :delete %>
+  <% else %>
+    <%= link_to 'Like', likes_path(@post), method: :post %>
+  <% end %>
+<% end %>
+
+<h2>Comments</h2>
+<ul>
+  <% @post.comments.each do |comment| %>
+    <li><%= comment.content %> - <%= comment.user.email %></li>
+  <% end %>
+</ul>
+
+<% if user_signed_in? %>
+  <%= form_with model: [@post, @post.comments.build], local: true do |form| %>
+    <div class="field"> 
+      <%= form.label :content %>
+      <%= form.text_area :content %>
+    </div>
+    <div class="actions">
+      <%= form.submit 'Add Comment' %>
+    </div>
+  <% end %>
+<% end %>

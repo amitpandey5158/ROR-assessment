@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+<%= link_to 'New Post', new_post_path %>
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post %>
+      <p><%= post.body %></p>
+      <p><%= link_to 'Edit', edit_post_path(post) if post.user == current_user %></p>
+      <p><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } if post.user == current_user %></p>
+    </li>
+  <% end %>
+</ul>
+<%= will_paginate @posts %>
+
