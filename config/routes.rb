@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'news/show'
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -11,4 +12,5 @@ Rails.application.routes.draw do
   end
   resource :likes, only: [:create, :destroy]
   root 'posts#index'
+  get '/news', to: 'news#show'
 end
