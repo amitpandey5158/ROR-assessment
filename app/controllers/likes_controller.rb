@@ -2,7 +2,6 @@ class LikesController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    debugger
     @post = Post.find(params[:post_id])
     @like = @post.likes.build(user: current_user)
     if @like.save

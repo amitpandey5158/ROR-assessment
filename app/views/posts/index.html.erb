@@ -1,14 +1,23 @@
-<h1>Posts</h1>
-<%= link_to 'New Post', new_post_path %>
-<ul>
-  <% @posts.each do |post| %>
-    <li>
-      <%= link_to post.title, post %>
-      <p><%= post.body %></p>
-      <p><%= link_to 'Edit', edit_post_path(post) if post.user == current_user %></p>
-      <p><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } if post.user == current_user %></p>
-    </li>
-  <% end %>
-</ul>
-<%= will_paginate @posts %>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="mt-5">Posts</h1>
+      <%= link_to 'New Post', new_post_path, class: "btn btn-primary mb-3" %>
+      <ul class="list-group">
+        <% @posts.each do |post| %>
+          <li class="list-group-item">
+            <h2><%= link_to post.title, post %></h2>
+            <p><%= post.body %></p>
+            <% if post.user == current_user %>
+              <%= link_to 'Edit', edit_post_path(post), class: "btn btn-sm btn-outline-secondary mr-2" %>
+              <%= button_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-danger" %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <nav aria-label="Page navigation">
+        <%= will_paginate @posts, class: "pagination justify-content-center mt-4" %>
+      </nav>
+    </div>
+  </div>
+</div>
