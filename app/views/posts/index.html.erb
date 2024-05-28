@@ -1,4 +1,6 @@
+<% if current_user %>
 <%= link_to 'Fetch News', news_path, class: "btn btn-primary mb-3" %>
+<% end %>
 
 <% if @posts.any? %>
 <div class="container">
