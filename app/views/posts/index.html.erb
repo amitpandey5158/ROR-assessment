@@ -1,5 +1,14 @@
 <% if current_user %>
-<%= link_to 'Fetch News', news_path, class: "btn btn-primary mb-3" %>
+  <%= link_to 'News Headlines', news_path, class: "btn btn-primary mb-3" %>
+<% end %>
+<% if flash[:notice] %>
+  <div class="alert alert-success" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% elsif flash[:alert] %>
+  <div class="alert alert-danger" role="alert">
+    <%= flash[:alert] %>
+  </div>
 <% end %>
 
 <% if @posts.any? %>

@@ -5,9 +5,9 @@ class LikesController < ApplicationController
     @post = Post.find(params[:post_id])
     @like = @post.likes.build(user: current_user)
     if @like.save
-      redirect_to @post, notice: 'Post was successfully liked.'
+      redirect_to @post, notice: 'Liked.'
     else
-      redirect_to @post, alert: 'Unable to like post.'
+      redirect_to @post, alert: 'Something went wrong.'
     end
   end
 
@@ -15,7 +15,7 @@ class LikesController < ApplicationController
     @post = Post.find(params[:post_id])
     @like = @post.likes.find_by(user: current_user)
     @like.destroy
-    redirect_to @post, notice: 'Post was successfully unliked.'
+    redirect_to @post, notice: 'Unliked.'
   end
 end
 
